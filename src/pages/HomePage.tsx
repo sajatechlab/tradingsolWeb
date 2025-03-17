@@ -25,11 +25,11 @@ const HomePage: React.FC = () => {
 
       <div className="background-images">
         <img
-          src="/home.png"
+          src="/home.webp"
           alt="Credit card with beach scene"
           className="background-image"
         />
-        <img src="/btc.png" alt="Bitcoin coins" className="bitcoin-image" />
+        <img src="/btc.webp" alt="Bitcoin coins" className="bitcoin-image" />
       </div>
     </div>
   )

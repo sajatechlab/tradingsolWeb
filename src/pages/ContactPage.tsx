@@ -22,7 +22,7 @@ const ContactPage = () => {
       {/* Left Side - Login Image */}
       <div className="w-full md:w-1/2 relative overflow-hidden min-h-[300px] md:min-h-screen">
         <img
-          src="/login.png"
+          src="/login.webp"
           alt="Credit card with coins"
           className="absolute w-full h-full object-cover"
         />
