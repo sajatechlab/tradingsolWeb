@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomePage.css'
 import { Link } from 'react-router-dom'
+import { LazyImage } from '../components/LazyImage'
 
 const HomePage: React.FC = () => {
   return (
@@ -24,12 +25,16 @@ const HomePage: React.FC = () => {
       </div>
 
       <div className="background-images">
-        <img
+        <LazyImage
           src="/home.webp"
           alt="Credit card with beach scene"
           className="background-image"
         />
-        <img src="/btc.webp" alt="Bitcoin coins" className="bitcoin-image" />
+        <LazyImage
+          src="/btc.webp"
+          alt="Bitcoin coins"
+          className="bitcoin-image"
+        />
       </div>
     </div>
   )

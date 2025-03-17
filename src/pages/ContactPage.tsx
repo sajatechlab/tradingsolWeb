@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { toast } from 'sonner'
+import { LazyImage } from '../components/LazyImage'
 
 const ContactPage = () => {
   const [email, setEmail] = useState('')
@@ -21,7 +22,7 @@ const ContactPage = () => {
     <main className="min-h-screen flex flex-col md:flex-row">
       {/* Left Side - Login Image */}
       <div className="w-full md:w-1/2 relative overflow-hidden min-h-[300px] md:min-h-screen">
-        <img
+        <LazyImage
           src="/login.webp"
           alt="Credit card with coins"
           className="absolute w-full h-full object-cover"
