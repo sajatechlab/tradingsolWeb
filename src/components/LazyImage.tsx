@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './LazyImage.css'
 
 interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
@@ -12,8 +13,8 @@ export function LazyImage({ src, alt, className, ...props }: LazyImageProps) {
     <img
       src={src}
       alt={alt}
-      className={`transition-opacity duration-300 ${
-        isLoaded ? 'opacity-100' : 'opacity-0'
+      className={`transition-all ${
+        isLoaded ? 'lazy-loaded' : 'lazy-loading'
       } ${className}`}
       onLoad={() => setIsLoaded(true)}
       {...props}
