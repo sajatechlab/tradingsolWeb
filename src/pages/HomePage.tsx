@@ -14,7 +14,10 @@ const HomePage: React.FC = () => {
       </nav>
 
       <div className="hero-content">
-        <h1>The future of investing is here. Buy BTC, ETH, XRP, and more.</h1>
+        <h1>
+          The future of investing is here. Buy BTC, ETH, XRP, and hold on your
+          own Wallet.
+        </h1>
         <p>
           Grow your portfolio to <span>LONG-TERM</span> with the best
           opportunities in the crypto world
